@@ -23,8 +23,9 @@ class DownloadClients
     service.authorization = authorize
 
     spreadsheet_id = "1LmItwD9FsVG9D_1ZVUNQgAxYM4KxZYLfv_D918Xe5m8"
-    range = "Form Responses 1!A2:F"
+    range = "Form Responses 1!A1:AO"
     response = service.get_spreadsheet_values(spreadsheet_id, range)
+    # byebug
     
     response
     
