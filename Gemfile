@@ -1,18 +1,21 @@
 source "https://rubygems.org"
+
 ruby "2.4.1"
+gem "rails", "~> 5.1.3"
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
 
-gem "rails", "~> 5.1.3"
+
+gem "devise"
+gem "google-api-client"
 gem "pg", "~> 0.18"
 gem "puma", "~> 3.7"
 gem "sass-rails", "~> 5.0"
-gem "uglifier", ">= 1.3.0"
 gem "turbolinks", "~> 5"
-gem "devise"
+gem "uglifier", ">= 1.3.0"
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem "therubyracer", platforms: :ruby
