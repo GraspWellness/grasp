@@ -26,11 +26,10 @@ class DownloadClients
     range = "Form Responses 1!A2:F"
     response = service.get_spreadsheet_values(spreadsheet_id, range)
     
-    puts "Name, Age, Weight, Height:"
-    puts "No data found." if response.values.empty?
+    response
     
-    response.values.each do |row|
-      puts "#{row[1]}, #{row[3]}, #{row[4]}, #{row[5]}"
-    end
+    # response.values.each do |row|
+    #   puts "#{row[1]}, #{row[3]}, #{row[4]}, #{row[5]}"
+    # end
   end
 end
