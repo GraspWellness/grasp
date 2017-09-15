@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome, <%= @admin.first_name %>!</h1>
+    <p>
+      You have been invited to the Grasp Wellness Admin Portal.
+      <br/>
+      Your login email is: <%= @admin.email %>
+    </p>
+    <p>
+      Follow this link to set your password:
+      <br/>
+      <%= link_to "Set password", @reset_password_url %>
+    </p>
+  </body>
+</html>
