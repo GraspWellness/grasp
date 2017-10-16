@@ -9,7 +9,7 @@ class CreateAdminService
       admin.password = Devise.friendly_token(50)
       admin.save!
       reset_password_token = admin.send(:set_reset_password_token)
-      AdminMailer.welcome(admin, reset_password_token).deliver_now
+      AdminMailer.welcome(admin, reset_password_token).deliver_later
     end
   end
 end

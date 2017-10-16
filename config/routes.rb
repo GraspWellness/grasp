@@ -8,4 +8,9 @@ Rails.application.routes.draw do
     devise_for :admins
     root "admin_dashboards#show"
   end
+
+  unless Rails.env.production?
+    require 'sidekiq/web'
+    mount Sidekiq::Web => '/sidekiq'
+  end
 end

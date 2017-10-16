@@ -7,27 +7,21 @@ git_source(:github) do |repo_name|
 end
 
 gem "rails", "~> 5.1.3"
+
+gem "devise"
 gem "pg", "~> 0.18"
 gem "puma", "~> 3.7"
 gem "sass-rails", "~> 5.0"
-gem "uglifier", ">= 1.3.0"
+gem "sidekiq"
 gem "turbolinks", "~> 5"
-gem "devise"
-
-# See https://github.com/rails/execjs#readme for more supported runtimes
-# gem "therubyracer", platforms: :ruby
-
-# gem "jbuilder", "~> 2.5"
-
-# Use Redis adapter to run Action Cable in production
-# gem "redis", "~> 3.0"
+gem "uglifier", ">= 1.3.0"
 
 group :development do
-  gem "web-console", ">= 3.3.0"
   gem "letter_opener"
   gem "listen", ">= 3.0.5", "< 3.2"
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
+  gem "web-console", ">= 3.3.0"
 end
 
 group :development, :test do
@@ -35,5 +29,3 @@ group :development, :test do
   gem "dotenv-rails"
 end
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-# gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
