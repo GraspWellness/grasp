@@ -68,14 +68,14 @@ Rails.application.configure do
   
   # For Devise
   config.action_mailer.default_url_options = {
-    from: "no-reply@graspwellness.com",
+    from: "no-reply@graspfitness.com",
     host: "graspfitness.com"
   }
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     address: "smtp.sendgrid.net",
-    domain: "graspwellness.com",
+    domain: "graspfitness.com",
     port: 587,
     password: ENV["SENDGRID_PASSWORD"],
     user_name: ENV["SENDGRID_USERNAME"],
