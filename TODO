@@ -1,3 +1,0 @@
-Set action mailer default url option host for production (for devise).
-
-config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }

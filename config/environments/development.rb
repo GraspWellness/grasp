@@ -31,7 +31,7 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
-  # Added as instructed by devise.
+  # Devise
   config.action_mailer.default_url_options = { host: "web.dev" }
 
   # Letter Opener
