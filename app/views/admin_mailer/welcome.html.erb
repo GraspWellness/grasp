@@ -7,13 +7,11 @@
     <h1>Welcome, <%= @admin.first_name %>!</h1>
     <p>
       You have been invited to the Grasp Wellness Admin Portal.
-      <br/>
-      Your login email is: <%= @admin.email %>
     </p>
     <p>
-      Follow this link to set your password:
+      Your login email is: <strong><%= @admin.email %></strong>
       <br/>
-      <%= link_to "Set password", @reset_password_url %>
+      Follow this link to set your password: <%= link_to "Set password", @reset_password_url %>
     </p>
   </body>
 </html>
