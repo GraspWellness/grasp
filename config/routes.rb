@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   constraints subdomain: "app" do
-    devise_for :trainers
-    root "trainer_dashboards#show"
+    root "welcome#index"
   end
 
   constraints subdomain: "admin" do
