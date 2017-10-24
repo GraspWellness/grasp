@@ -1,0 +1,65 @@
+{
+  "name": "grasp",
+  "scripts": {
+  },
+  "env": {
+    "BASIC_AUTH_PASSWORD": {
+      "required": true
+    },
+    "BASIC_AUTH_USERNAME": {
+      "required": true
+    },
+    "GMAIL_PASSWORD": {
+      "required": true
+    },
+    "GMAIL_USERNAME": {
+      "required": true
+    },
+    "GOOGLE_ACCOUNT_TYPE": {
+      "required": true
+    },
+    "GOOGLE_CLIENT_EMAIL": {
+      "required": true
+    },
+    "GOOGLE_PRIVATE_KEY": {
+      "required": true
+    },
+    "LANG": {
+      "required": true
+    },
+    "RACK_ENV": {
+      "required": true
+    },
+    "RAILS_ENV": {
+      "required": true
+    },
+    "RAILS_LOG_TO_STDOUT": {
+      "required": true
+    },
+    "RAILS_SERVE_STATIC_FILES": {
+      "required": true
+    },
+    "REDIS_PROVIDER": {
+      "required": true
+    },
+    "SECRET_KEY_BASE": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "papertrail",
+    "heroku-postgresql",
+    "rediscloud",
+    "sendgrid"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    },
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
