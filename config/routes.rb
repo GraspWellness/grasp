@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   constraints subdomain: "app" do
     root "welcome#index"
-    get "hello_world", to: "hello_world#index"
+    get "tools/hydration_helper", to: "hydration_helper#index"
   end
 
   constraints subdomain: "admin" do
