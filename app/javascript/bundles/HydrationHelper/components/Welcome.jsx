@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default ({continueSurvey}) => {
+export default () => {
   return (
     <div>
       <h3>
@@ -9,7 +9,6 @@ export default ({continueSurvey}) => {
       <p>
         Are you ready to get started drinking more water&#63;
       </p>
-      <button onClick={continueSurvey}>I'm ready!</button>
     </div>
   );
 }
